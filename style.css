@@ -29,9 +29,32 @@ body {
 }
 
 .profile-wrapper {
+    position: relative;
     margin-top: -80px;
     display: flex;
     justify-content: center;
+}
+
+.profile-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #7df9ff,
+        #9f7bff,
+        #7df9ff
+    );
+    filter: blur(12px);
+    animation: spin 6s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .profile-video {
