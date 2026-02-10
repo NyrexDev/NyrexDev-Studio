@@ -182,3 +182,56 @@ footer {
     transform: translateY(-60px);
 }
 
+/* Social Cards */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-card {
+    background: rgba(20,30,60,0.65);
+    border: 1px solid rgba(125,249,255,0.25);
+    border-radius: 18px;
+    padding: 25px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.social-card img {
+    width: 64px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 15px rgba(125,249,255,0.6));
+}
+
+.social-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    color: #7df9ff;
+}
+
+.social-card .subtext {
+    font-size: 0.95rem;
+    color: #b6c9ff;
+    line-height: 1.4;
+}
+
+.social-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 40px rgba(125,249,255,0.35);
+    border-color: #7df9ff;
+}
+
+/* Portfolio emphasis */
+.social-card.highlight {
+    border-color: #9f7bff;
+    box-shadow: 0 0 50px rgba(159,123,255,0.45);
+}
+
+.social-card.highlight h4 {
+    color: #c3b2ff;
+}
+
