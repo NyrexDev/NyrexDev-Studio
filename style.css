@@ -38,6 +38,8 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    object-fit: contain;
+    background: #070b14;
     border: 3px solid #7df9ff;
     box-shadow: 0 0 30px #7df9ff;
 }
