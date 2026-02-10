@@ -25,6 +25,7 @@ body {
 /* Hero */
 .hero {
     text-align: center;
+    padding-top: 100px; /* Add this line to create space for the glow */
     padding-bottom: 80px;
 }
 
